@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Collections Yu-Gi-Oh!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-overlay: rgba(22, 13, 12, 0.88);
+            --card-bg: rgba(38, 24, 22, 0.82);
+            --card-hover: rgba(48, 30, 28, 0.90);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --accent-orange: #f15a24;
+            --accent-light-orange: #ff7d52;
+            --text-main: #f5ebe6;
+            --text-muted: #b8a399;
+            --input-bg: rgba(18, 10, 9, 0.75);
+        }
+
+        body {
+            background: linear-gradient(var(--bg-overlay), var(--bg-overlay)),
+                        url('/static/fond.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: var(--text-main);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            padding: 40px 20px;
+            margin: 0;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+            letter-spacing: -0.5px;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .header-title span {
+            color: var(--accent-orange);
+            font-style: italic;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            margin: 0 0 40px 0;
+            font-size: 1.05em;
+        }
+
+        .add-form {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 28px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        .add-form h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4em;
+            color: var(--text-main);
+        }
+
+        .form-group {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .add-form input {
+            background: var(--input-bg);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: var(--text-main);
+            padding: 12px 18px;
+            border-radius: 12px;
+            outline: none;
+            font-family: inherit;
+            font-size: 0.95em;
+            transition: border-color 0.2s;
+        }
+
+        .add-form input:focus {
+            border-color: var(--accent-orange);
+        }
+
+        .add-form button {
+            background: var(--accent-orange);
+            color: #ffffff;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            font-family: inherit;
+            font-size: 0.95em;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .add-form button:hover {
+            background: var(--accent-light-orange);
+            transform: translateY(-1px);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .card-set {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 24px;
+            text-decoration: none;
+            color: var(--text-main);
+            transition: background-color 0.2s, transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+            display: block;
+        }
+
+        .card-set:hover {
+            background: var(--card-hover);
+            border-color: rgba(241, 90, 36, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .set-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin-bottom: 4px;
+        }
+
+        .set-subtitle {
+            font-size: 0.95em;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        .progress-bar-bg {
+            background: rgba(255, 255, 255, 0.08);
+            height: 8px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            background: var(--accent-orange);
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .stat-text {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.88em;
+            margin-top: 12px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .stat-pct {
+            color: var(--text-main);
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="header-title">Mes <span>Collections</span></h1>
+        <p class="subtitle">Suivi de complétion et gestion des cartes Yu-Gi-Oh!</p>
+
+        <div class="add-form">
+            <h3>Importer une nouvelle extension</h3>
+            <form action="/add_set" method="POST" class="form-group">
+                <input type="text" name="set_code" placeholder="Code (ex: PAC1-KR)" required style="flex: 1;">
+                <input type="text" name="set_name" placeholder="Nom du set" required style="flex: 2;">
+                <input type="url" name="url" placeholder="URL Yugipedia" required style="flex: 3;">
+                <button type="submit">Ajouter l'extension</button>
+            </form>
+        </div>
+
+        <div class="grid">
+            {% for s in sets %}
+            <a href="/set/{{ s.code }}" class="card-set">
+                <div class="set-title">{{ s.code }}</div>
+                <div class="set-subtitle">{{ s.name }}</div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: {{ s.pct }}%;"></div>
+                </div>
+                <div class="stat-text">
+                    <span>{{ s.owned }} / {{ s.total }} uniques</span>
+                    <span class="stat-pct">{{ s.pct }}%</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+
+</body>
+</html>
