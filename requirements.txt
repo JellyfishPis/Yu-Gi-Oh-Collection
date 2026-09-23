@@ -3,3 +3,4 @@ requests
 beautifulsoup4
 gunicorn
 tqdm
+psycopg2-binary
