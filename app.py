@@ -34,6 +34,7 @@ def get_db_connection():
 app = Flask(__name__)
 CACHE_FILE = "images_cache.json"
 
+
 def init_db():
     conn = get_db_connection()
     c = conn.cursor()
@@ -80,6 +81,10 @@ def init_db():
                     )''')
     conn.commit()
     conn.close()
+
+# Crée les tables automatiquement au démarrage sur Render / Gunicorn
+with app.app_context():
+    init_db()
 
 def load_cache():
     if os.path.exists(CACHE_FILE):
