@@ -12,7 +12,7 @@ try:
 except ImportError:
     HAS_TQDM = False
 
-DATABASE_URL = os.environ.get("DATABASE_URL")
+DATABASE_URL = os.environ.get("DATABASE_URL") or "postgresql://postgres.eplaexjlmipvedfhwimk:2uMkgSfzLP.BAsq@aws-0-eu-central-1.pooler.supabase.com:6543/postgres"
 
 if DATABASE_URL:
     import psycopg2
