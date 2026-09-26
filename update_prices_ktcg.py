@@ -63,13 +63,18 @@ def scrape_ktcg_all_pages(base_url):
 
             full_title = title_node.get_text(strip=True)
 
-            code_match = re.search(r'([A-Z0-9]+-K[R0-9]+)', full_title, re.IGNORECASE)
+            # Regex mis à jour pour capturer aussi bien -K001 que -KR001
+            code_match = re.search(r'([A-Z0-9]+-K[R]?[0-9]+)', full_title, re.IGNORECASE)
             if not code_match:
                 continue
             card_code = code_match.group(1).upper()
 
             price_node = product.select_one('.price .amount, span.price')
+            # Extraction du prix (priorité au prix en promo <ins> s'il existe)
             price = 0.0
+            price_ins = product.select_one('.price ins .amount, ins span.amount')
+            price_node = price_ins if price_ins else product.select_one('.price .amount, span.price')
+
             if price_node:
                 price_match = re.search(r'[\$€]?\s*(\d+[\.,]?\d*)', price_node.get_text())
                 if price_match:
@@ -101,7 +106,7 @@ def scrape_ktcg_all_pages(base_url):
             break
 
         page += 1
-        time.sleep(1) # Pause d'une seconde pour ne pas déclencher le rate limit K-TCG
+        time.sleep(0.25) # Pause d'une demi seconde pour ne pas déclencher le rate limit K-TCG
 
     return extracted_data
 
@@ -160,5 +165,5 @@ def update_prices_in_db(set_code):
     print(f"\nTerminé ! {updated_count} lignes de raretés mises à jour.")
 
 if __name__ == '__main__':
-    target_set = "RC03-KR"
+    target_set = "FOTB-KR"
     update_prices_in_db(target_set)
