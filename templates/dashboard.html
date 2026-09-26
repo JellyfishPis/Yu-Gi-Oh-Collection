@@ -57,33 +57,78 @@
             font-size: 1.05em;
         }
 
-        /* BANNIÈRE VALEUR GLOBALE */
-        .global-val-card {
+        /* BANNIÈRE VALEUR GLOBALE ET STATS */
+        .stats-card {
             background: var(--card-bg);
             border: 1px solid var(--card-border);
             backdrop-filter: blur(12px);
             border-radius: 20px;
-            padding: 20px 28px;
+            padding: 24px 28px;
             margin-bottom: 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
         }
 
-        .global-val-card h2 {
-            margin: 0;
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3em;
-            color: var(--text-main);
+        .main-stat {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 18px;
+            border-bottom: 1px solid var(--card-border);
         }
 
-        .global-val-amount {
+        .stat-label {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4em;
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        .stat-total {
             font-size: 1.8em;
             font-weight: 700;
             color: var(--accent-green);
-            margin: 0;
             text-shadow: 0 2px 10px rgba(46, 204, 113, 0.2);
+        }
+
+        .sub-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 18px;
+        }
+
+        .sub-stat-item {
+            background: rgba(18, 10, 9, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 14px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .sub-stat-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .flag-icon {
+            font-size: 1.1em;
+        }
+
+        .sub-stat-title {
+            font-size: 0.85em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+
+        .sub-stat-value {
+            font-size: 1.25em;
+            font-weight: 700;
+            color: var(--text-main);
         }
 
         .add-form {
@@ -257,9 +302,37 @@
         <p class="subtitle">Suivi de complétion et gestion des cartes Yu-Gi-Oh!</p>
 
         <!-- BANNIÈRE DE VALEUR GLOBALE -->
-        <div class="global-val-card">
-            <h2>Valeur estimée de la collection</h2>
-            <p class="global-price">${{ "%.2f"|format(global_total_value) }}</p>
+        <div class="stats-card">
+            <div class="main-stat">
+                <span class="stat-label">Valeur estimée de la collection</span>
+                <span class="stat-total">${{ "%.2f"|format(collection_stats.total) }}</span>
+            </div>
+            
+            <div class="sub-stats-grid">
+                <div class="sub-stat-item">
+                    <div class="sub-stat-header">
+                        <span class="flag-icon">🇫🇷</span>
+                        <span class="sub-stat-title">Française</span>
+                    </div>
+                    <span class="sub-stat-value">${{ "%.2f"|format(collection_stats.fr) }}</span>
+                </div>
+
+                <div class="sub-stat-item">
+                    <div class="sub-stat-header">
+                        <span class="flag-icon">🇰🇷</span>
+                        <span class="sub-stat-title">Coréenne</span>
+                    </div>
+                    <span class="sub-stat-value">${{ "%.2f"|format(collection_stats.kr) }}</span>
+                </div>
+
+                <div class="sub-stat-item">
+                    <div class="sub-stat-header">
+                        <span class="flag-icon">🇬🇧</span>
+                        <span class="sub-stat-title">Anglaise</span>
+                    </div>
+                    <span class="sub-stat-value">${{ "%.2f"|format(collection_stats.en) }}</span>
+                </div>
+            </div>
         </div>
 
         <div class="add-form">

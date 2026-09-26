@@ -36,6 +36,25 @@ def scrape_ktcg_all_pages(base_url):
     extracted_data = []
     page = 1
 
+    # Dictionnaire de correspondance pour normaliser les raretés K-TCG
+    rarity_map = {
+        'Prismatic': 'Prismatic Secret Rare',
+        'Secret': 'Secret Rare',
+        'Parallel': 'Parallel Rare',
+        'Ultra': 'Ultra Rare',
+        'Super': 'Super Rare',
+        'Ultimate': 'Ultimate Rare',
+        'Collector\'s': 'Collector\'s Rare',
+        'Extra Secret': 'Extra Secret Rare'
+    }
+
+    # Liste des motifs de rareté ordonnée par précision
+    rarity_patterns = [
+        'Quarter Century Secret Rare', 'Prismatic Secret Rare', 'Extra Secret Rare',
+        'Gold Secret Rare', 'Premium Gold Rare', 'Secret Rare', 'Collector\'s Rare', 
+        'Ultimate Rare', 'Ultra Rare', 'Super Rare', 'Rare', 'Prismatic', 'Secret', 'Parallel', 'Common'
+    ]
+
     while True:
         page_url = f"{base_url.rstrip('/')}/page/{page}/" if page > 1 else base_url
         print(f"Scraping page {page} : {page_url}")
@@ -63,14 +82,13 @@ def scrape_ktcg_all_pages(base_url):
 
             full_title = title_node.get_text(strip=True)
 
-            # Regex mis à jour pour capturer aussi bien -K001 que -KR001
+            # Extraction du code carte (ex: PAC1-KR001, PAC1-K001)
             code_match = re.search(r'([A-Z0-9]+-K[R]?[0-9]+)', full_title, re.IGNORECASE)
             if not code_match:
                 continue
             card_code = code_match.group(1).upper()
 
-            price_node = product.select_one('.price .amount, span.price')
-            # Extraction du prix (priorité au prix en promo <ins> s'il existe)
+            # Extraction du prix (priorité à la réduction <ins> s'il y en a une)
             price = 0.0
             price_ins = product.select_one('.price ins .amount, ins span.amount')
             price_node = price_ins if price_ins else product.select_one('.price .amount, span.price')
@@ -80,22 +98,20 @@ def scrape_ktcg_all_pages(base_url):
                 if price_match:
                     price = float(price_match.group(1).replace(',', '.'))
 
-            rarity = "Common"
-            rarity_patterns = [
-                'Quarter Century Secret Rare', 'Prismatic Secret Rare', 'Extra Secret Rare',
-                'Gold Secret Rare', 'Premium Gold Rare', 'Secret Rare', 'Collector\'s Rare', 
-                'Ultimate Rare', 'Ultra Rare', 'Super Rare', 'Rare', 'Common'
-            ]
-            
+            # Extraction de la rareté
+            raw_rarity = "Common"
             for r in rarity_patterns:
                 if r.lower() in full_title.lower():
-                    rarity = r
+                    raw_rarity = r
                     break
+
+            # Conversion vers le nom standardisé
+            final_rarity = rarity_map.get(raw_rarity, raw_rarity)
 
             extracted_data.append({
                 'full_title': full_title,
                 'card_code': card_code,
-                'rarity': rarity,
+                'rarity': final_rarity,
                 'price': price
             })
             items_found += 1
@@ -106,7 +122,7 @@ def scrape_ktcg_all_pages(base_url):
             break
 
         page += 1
-        time.sleep(0.25) # Pause d'une demi seconde pour ne pas déclencher le rate limit K-TCG
+        time.sleep(0.25)
 
     return extracted_data
 
@@ -126,6 +142,10 @@ def update_prices_in_db(set_code):
     updated_count = 0
 
     for item in items:
+        # On extrait le mot racine de la rareté (ex: 'Secret' pour 'Secret Rare' ou 'Secret')
+        rarity_root = item['rarity'].split()[0]
+        rarity_pattern = f"%{rarity_root}%"
+
         query = """
             UPDATE card_rarities r
             SET price = %s
@@ -133,28 +153,20 @@ def update_prices_in_db(set_code):
             WHERE r.card_id = c.id
             AND c.set_code = %s
             AND c.card_code = %s
-            AND (
-                LOWER(r.rarity_name) LIKE LOWER(%s)
-                OR LOWER(%s) LIKE LOWER(r.rarity_name)
-            )
+            AND LOWER(r.rarity_name) LIKE LOWER(%s)
         """ if DATABASE_URL else """
             UPDATE card_rarities
             SET price = ?
             WHERE card_id IN (
                 SELECT id FROM cards WHERE set_code = ? AND card_code = ?
             )
-            AND (
-                LOWER(rarity_name) LIKE LOWER(?)
-                OR LOWER(?) LIKE LOWER(rarity_name)
-            )
+            AND LOWER(rarity_name) LIKE LOWER(?)
         """
 
-        rarity_pattern = f"%{item['rarity']}%"
-
         if DATABASE_URL:
-            c.execute(query, (item['price'], set_code, item['card_code'], rarity_pattern, item['rarity']))
+            c.execute(query, (item['price'], set_code, item['card_code'], rarity_pattern))
         else:
-            c.execute(query, (item['price'], set_code, item['card_code'], rarity_pattern, item['rarity']))
+            c.execute(query, (item['price'], set_code, item['card_code'], rarity_pattern))
 
         if c.rowcount > 0:
             updated_count += c.rowcount
@@ -165,5 +177,5 @@ def update_prices_in_db(set_code):
     print(f"\nTerminé ! {updated_count} lignes de raretés mises à jour.")
 
 if __name__ == '__main__':
-    target_set = "FOTB-KR"
+    target_set = "DP29-KR"
     update_prices_in_db(target_set)

@@ -6,9 +6,9 @@ def create_backup():
     conn = get_db_connection()
     c = conn.cursor()
 
-    # Récupère uniquement les cartes que tu possèdes (quantité > 0)
+    # Récupère les cartes possédées (quantité > 0) avec le prix
     query = """
-        SELECT s.code AS set_code, c.card_code, c.name, r.rarity_name, r.quantity
+        SELECT s.code AS set_code, c.card_code, c.name, r.rarity_name, r.quantity, r.price
         FROM card_rarities r
         JOIN cards c ON r.card_id = c.id
         JOIN sets s ON c.set_code = s.code
@@ -25,7 +25,8 @@ def create_backup():
             "card_code": row[1],
             "card_name": row[2],
             "rarity": row[3],
-            "quantity": row[4]
+            "quantity": row[4],
+            "price": float(row[5]) if row[5] is not None else 0.0
         })
 
     conn.close()

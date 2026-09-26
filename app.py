@@ -245,14 +245,29 @@ def dashboard():
         else:
             sets_by_lang['en'].append(set_item)
 
-    # Calcul de la valeur TOTALE de toute la collection
-    query_global_value = "SELECT SUM(quantity * COALESCE(price, 0.0)) FROM card_rarities WHERE quantity > 0"
-    c.execute(query_global_value)
-    global_val_res = c.fetchone()[0]
-    global_total_value = float(global_val_res) if global_val_res else 0.0
+   # Calcul de la valeur TOTALE et de la ventilation par langue
+    query_stats = """
+        SELECT 
+            SUM(r.quantity * COALESCE(r.price, 0.0)) AS total,
+            SUM(CASE WHEN c.set_code LIKE '%-FR' OR c.set_code LIKE '%-F' THEN r.quantity * COALESCE(r.price, 0.0) ELSE 0 END) AS total_fr,
+            SUM(CASE WHEN c.set_code LIKE '%-KR' OR c.set_code LIKE '%-K' THEN r.quantity * COALESCE(r.price, 0.0) ELSE 0 END) AS total_kr,
+            SUM(CASE WHEN c.set_code LIKE '%-EN' OR c.set_code LIKE '%-E' THEN r.quantity * COALESCE(r.price, 0.0) ELSE 0 END) AS total_en
+        FROM card_rarities r
+        JOIN cards c ON r.card_id = c.id
+        WHERE r.quantity > 0
+    """
+    c.execute(query_stats)
+    row = c.fetchone()
+
+    collection_stats = {
+        'total': float(row[0]) if row and row[0] else 0.0,
+        'fr': float(row[1]) if row and row[1] else 0.0,
+        'kr': float(row[2]) if row and row[2] else 0.0,
+        'en': float(row[3]) if row and row[3] else 0.0
+    }
 
     conn.close()
-    return render_template('dashboard.html', sets=sets_by_lang, global_total_value=global_total_value)
+    return render_template('dashboard.html', sets=sets_by_lang, collection_stats=collection_stats)
 
 @app.route('/set/<set_code>')
 def view_set(set_code):
