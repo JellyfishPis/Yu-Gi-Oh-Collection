@@ -17,6 +17,7 @@
             --text-main: #f5ebe6;
             --text-muted: #b8a399;
             --input-bg: rgba(18, 10, 9, 0.75);
+            --accent-green: #2ecc71;
         }
 
         body {
@@ -52,8 +53,37 @@
 
         .subtitle {
             color: var(--text-muted);
-            margin: 0 0 40px 0;
+            margin: 0 0 30px 0;
             font-size: 1.05em;
+        }
+
+        /* BANNIÈRE VALEUR GLOBALE */
+        .global-val-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 20px 28px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        .global-val-card h2 {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3em;
+            color: var(--text-main);
+        }
+
+        .global-val-amount {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--accent-green);
+            margin: 0;
+            text-shadow: 0 2px 10px rgba(46, 204, 113, 0.2);
         }
 
         .add-form {
@@ -156,11 +186,27 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
         }
 
+        .set-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
         .set-title {
             font-size: 1.4em;
             font-weight: 700;
             color: var(--accent-orange);
             margin-bottom: 4px;
+        }
+
+        .set-val-badge {
+            font-size: 0.9em;
+            font-weight: 700;
+            color: var(--accent-green);
+            background: rgba(46, 204, 113, 0.12);
+            padding: 4px 10px;
+            border-radius: 8px;
+            border: 1px solid rgba(46, 204, 113, 0.25);
         }
 
         .set-subtitle {
@@ -210,6 +256,12 @@
         <h1 class="header-title">Mes <span>Collections</span></h1>
         <p class="subtitle">Suivi de complétion et gestion des cartes Yu-Gi-Oh!</p>
 
+        <!-- BANNIÈRE DE VALEUR GLOBALE -->
+        <div class="global-val-card">
+            <h2>Valeur estimée de la collection</h2>
+            <p class="global-price">${{ "%.2f"|format(global_total_value) }}</p>
+        </div>
+
         <div class="add-form">
             <h3>Importer une nouvelle extension</h3>
             <form action="/add_set" method="POST" class="form-group">
@@ -225,7 +277,10 @@
         <div class="grid">
             {% for s in sets.fr %}
             <a href="/set/{{ s.code }}" class="card-set">
-                <div class="set-title">{{ s.code }}</div>
+                <div class="set-header-row">
+                    <div class="set-title">{{ s.code }}</div>
+                    <div class="set-val-badge">${{ "%.2f"|format(s.value) }}</div>
+                </div>
                 <div class="set-subtitle">{{ s.name }}</div>
                 {% if s.date and s.date != '1970-01-01' %}
                     <div class="set-date">🗓 Sortie : {{ s.date }}</div>
@@ -248,7 +303,10 @@
         <div class="grid">
             {% for s in sets.en %}
             <a href="/set/{{ s.code }}" class="card-set">
-                <div class="set-title">{{ s.code }}</div>
+                <div class="set-header-row">
+                    <div class="set-title">{{ s.code }}</div>
+                    <div class="set-val-badge">${{ "%.2f"|format(s.value) }}</div>
+                </div>
                 <div class="set-subtitle">{{ s.name }}</div>
                 {% if s.date and s.date != '1970-01-01' %}
                     <div class="set-date">🗓 Sortie : {{ s.date }}</div>
@@ -271,7 +329,10 @@
         <div class="grid">
             {% for s in sets.kr %}
             <a href="/set/{{ s.code }}" class="card-set">
-                <div class="set-title">{{ s.code }}</div>
+                <div class="set-header-row">
+                    <div class="set-title">{{ s.code }}</div>
+                    <div class="set-val-badge">${{ "%.2f"|format(s.value) }}</div>
+                </div>
                 <div class="set-subtitle">{{ s.name }}</div>
                 {% if s.date and s.date != '1970-01-01' %}
                     <div class="set-date">🗓 Sortie : {{ s.date }}</div>

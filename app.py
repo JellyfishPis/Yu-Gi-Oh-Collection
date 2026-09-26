@@ -5,6 +5,7 @@ import time
 import requests
 from bs4 import BeautifulSoup
 from flask import Flask, render_template, request, redirect, url_for, jsonify
+from datetime import datetime
 
 DATABASE_URL = os.environ.get("DATABASE_URL") or "postgresql://postgres.eplaexjlmipvedfhwimk:2uMkgSfzLP.BAsq@aws-0-eu-central-1.pooler.supabase.com:6543/postgres"
 
@@ -55,7 +56,8 @@ def init_db():
                         id SERIAL PRIMARY KEY,
                         card_id INTEGER REFERENCES cards(id),
                         rarity_name TEXT,
-                        quantity INTEGER DEFAULT 0
+                        quantity INTEGER DEFAULT 0,
+                        price NUMERIC(10, 2) DEFAULT 0.00
                     )''')
     else:
         c.execute('''CREATE TABLE IF NOT EXISTS sets (
@@ -77,6 +79,7 @@ def init_db():
                         card_id INTEGER,
                         rarity_name TEXT,
                         quantity INTEGER DEFAULT 0,
+                        price REAL DEFAULT 0.0,
                         FOREIGN KEY(card_id) REFERENCES cards(id)
                     )''')
     conn.commit()
@@ -151,17 +154,10 @@ def fetch_card_image(card_name, card_code, cache):
     cache[cache_key] = default_back
     return default_back
 
-from datetime import datetime
-
-from datetime import datetime
-
 def extract_release_date(soup, set_code):
-    """ Extrait la date de sortie exacte selon la région à partir de l'infobox Yugipedia """
     lang = set_code.split('-')[-1] if '-' in set_code else ''
-    if lang == 'K':
-        lang = 'KR'
+    if lang == 'K': lang = 'KR'
     
-    # Association entre le suffixe du set et le libellé Yugipedia
     region_map = {
         'FR': ['French', 'Europe', 'European'],
         'KR': ['Korean', 'South Korea'],
@@ -171,30 +167,22 @@ def extract_release_date(soup, set_code):
     
     target_labels = region_map.get(lang, ['English', 'Worldwide', 'Japanese'])
     
-    # 1. Chercher la section "Release dates" dans les tableaux
     for tr in soup.find_all('tr'):
-        # On regarde s'il y a une étiquette de région (ex: Korean, Japanese, French)
         header = tr.find(['th', 'td'])
         if header:
             htext = header.text.strip()
-            
-            # Vérifier si l'étiquette correspond à la langue ciblée
             for label in target_labels:
                 if label.lower() in htext.lower():
                     td = tr.find_all(['td', 'th'])[-1]
                     if td:
                         date_text = td.text.strip()
-                        # Extraire la date du type "August 7, 2024" ou "7 August 2024"
                         m = re.search(r'([A-Za-z]+\s+\d{1,2},\s*\d{4}|\d{1,2}\s+[A-Za-z]+\s+\d{4})', date_text)
                         if m:
                             d_clean = m.group(1).replace(',', '')
                             for fmt in ("%B %d %Y", "%d %B %Y"):
-                                try:
-                                    return datetime.strptime(d_clean, fmt).strftime("%Y-%m-%d")
-                                except ValueError:
-                                    pass
+                                try: return datetime.strptime(d_clean, fmt).strftime("%Y-%m-%d")
+                                except ValueError: pass
 
-    # 2. Fallback : si la région exacte n'est pas précisée, attraper la toute première date trouvée sous Release dates
     for tr in soup.find_all('tr'):
         text = tr.get_text(separator=' ')
         if 'release' in text.lower():
@@ -202,10 +190,8 @@ def extract_release_date(soup, set_code):
             if m:
                 d_clean = m.group(1).replace(',', '')
                 for fmt in ("%B %d %Y", "%d %B %Y"):
-                    try:
-                        return datetime.strptime(d_clean, fmt).strftime("%Y-%m-%d")
-                    except ValueError:
-                        pass
+                    try: return datetime.strptime(d_clean, fmt).strftime("%Y-%m-%d")
+                    except ValueError: pass
 
     return "1970-01-01"
 
@@ -213,7 +199,6 @@ def extract_release_date(soup, set_code):
 def dashboard():
     conn = get_db_connection()
     c = conn.cursor()
-    # Tri par date de sortie chronologique
     c.execute("SELECT code, name, release_date FROM sets ORDER BY release_date ASC, code ASC")
     sets_data = c.fetchall()
 
@@ -234,10 +219,25 @@ def dashboard():
         c.execute(query_owned, (code,))
         owned = c.fetchone()[0]
 
-        pct = round((owned / total * 100), 2) if total > 0 else 0
-        set_item = {'code': code, 'name': name, 'total': total, 'owned': owned, 'pct': pct, 'date': rel_date}
+        # Calcul de la valeur totale possédée dans le set
+        query_set_value = '''SELECT SUM(r.quantity * COALESCE(r.price, 0.0))
+                             FROM card_rarities r
+                             JOIN cards c ON r.card_id = c.id
+                             WHERE c.set_code = %s AND r.quantity > 0''' if DATABASE_URL else '''SELECT SUM(r.quantity * COALESCE(r.price, 0.0))
+                             FROM card_rarities r
+                             JOIN cards c ON r.card_id = c.id
+                             WHERE c.set_code = ? AND r.quantity > 0'''
+        c.execute(query_set_value, (code,))
+        set_val_res = c.fetchone()[0]
+        set_value = float(set_val_res) if set_val_res else 0.0
 
-        # Dispatch selon la langue (-FR, -EN, -KR ou par défaut -EN)
+        pct = round((owned / total * 100), 2) if total > 0 else 0
+        set_item = {
+            'code': code, 'name': name, 'total': total, 
+            'owned': owned, 'pct': pct, 'date': rel_date,
+            'value': set_value
+        }
+
         if code.endswith('-FR'):
             sets_by_lang['fr'].append(set_item)
         elif code.endswith('-KR') or code.endswith('-K'):
@@ -245,8 +245,14 @@ def dashboard():
         else:
             sets_by_lang['en'].append(set_item)
 
+    # Calcul de la valeur TOTALE de toute la collection
+    query_global_value = "SELECT SUM(quantity * COALESCE(price, 0.0)) FROM card_rarities WHERE quantity > 0"
+    c.execute(query_global_value)
+    global_val_res = c.fetchone()[0]
+    global_total_value = float(global_val_res) if global_val_res else 0.0
+
     conn.close()
-    return render_template('dashboard.html', sets=sets_by_lang)
+    return render_template('dashboard.html', sets=sets_by_lang, global_total_value=global_total_value)
 
 @app.route('/set/<set_code>')
 def view_set(set_code):
@@ -262,7 +268,7 @@ def view_set(set_code):
     query_cards_with_rarities = '''
         SELECT 
             c.id, c.card_code, c.name, c.image_url,
-            r.id AS rarity_id, r.rarity_name, r.quantity
+            r.id AS rarity_id, r.rarity_name, r.quantity, COALESCE(r.price, 0.0) AS price
         FROM cards c
         LEFT JOIN card_rarities r ON c.id = r.card_id
         WHERE c.set_code = %s
@@ -270,7 +276,7 @@ def view_set(set_code):
     ''' if DATABASE_URL else '''
         SELECT 
             c.id, c.card_code, c.name, c.image_url,
-            r.id AS rarity_id, r.rarity_name, r.quantity
+            r.id AS rarity_id, r.rarity_name, r.quantity, COALESCE(r.price, 0.0) AS price
         FROM cards c
         LEFT JOIN card_rarities r ON c.id = r.card_id
         WHERE c.set_code = ?
@@ -291,11 +297,24 @@ def view_set(set_code):
                      WHERE c.set_code = ? AND r.quantity > 0'''
     c.execute(query_owned, (set_code,))
     owned_unique_codes = c.fetchone()[0]
+
+    # Valeur totale des cartes possédées dans ce set
+    query_set_value = '''SELECT SUM(r.quantity * COALESCE(r.price, 0.0))
+                         FROM card_rarities r
+                         JOIN cards c ON r.card_id = c.id
+                         WHERE c.set_code = %s AND r.quantity > 0''' if DATABASE_URL else '''SELECT SUM(r.quantity * COALESCE(r.price, 0.0))
+                         FROM card_rarities r
+                         JOIN cards c ON r.card_id = c.id
+                         WHERE c.set_code = ? AND r.quantity > 0'''
+    c.execute(query_set_value, (set_code,))
+    set_val_res = c.fetchone()[0]
+    set_value = float(set_val_res) if set_val_res else 0.0
+
     conn.close()
 
     cards_dict = {}
     for row in rows:
-        card_id, card_code, raw_name, img_url, rarity_id, rarity_name, qty = row
+        card_id, card_code, raw_name, img_url, rarity_id, rarity_name, qty, price = row
         if card_id not in cards_dict:
             is_alt = "alternate" in raw_name.lower() or "alt" in raw_name.lower()
             cards_dict[card_id] = {
@@ -309,14 +328,20 @@ def view_set(set_code):
             }
         
         if rarity_id:
-            cards_dict[card_id]['rarities'].append({'id': rarity_id, 'rarity': rarity_name, 'qty': qty})
+            cards_dict[card_id]['rarities'].append({
+                'id': rarity_id, 
+                'rarity': rarity_name, 
+                'qty': qty,
+                'price': float(price) if price else 0.0
+            })
             if qty > 0: cards_dict[card_id]['owned'] = True
 
     cards_data = list(cards_dict.values())
     pct = round((owned_unique_codes / total_unique_codes * 100), 2) if total_unique_codes > 0 else 0
 
     return render_template('set_view.html', set_code=set_code, set_name=set_info[0], 
-                           cards=cards_data, total=total_unique_codes, owned=owned_unique_codes, pct=pct)
+                           cards=cards_data, total=total_unique_codes, owned=owned_unique_codes, 
+                           pct=pct, set_value=set_value)
 
 @app.route('/api/update_qty', methods=['POST'])
 def update_qty():
@@ -387,9 +412,9 @@ def add_set():
         rarities = parse_rarities(rarity_raw)
         for r in rarities:
             if DATABASE_URL:
-                c.execute("INSERT INTO card_rarities (card_id, rarity_name, quantity) VALUES (%s, %s, 0)", (card_id, r))
+                c.execute("INSERT INTO card_rarities (card_id, rarity_name, quantity, price) VALUES (%s, %s, 0, 0.0)", (card_id, r))
             else:
-                c.execute("INSERT INTO card_rarities (card_id, rarity_name, quantity) VALUES (?, ?, 0)", (card_id, r))
+                c.execute("INSERT INTO card_rarities (card_id, rarity_name, quantity, price) VALUES (?, ?, 0, 0.0)", (card_id, r))
         time.sleep(0.05)
 
     save_cache(cache)
