@@ -114,6 +114,23 @@
             transform: translateY(-1px);
         }
 
+        .lang-section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6em;
+            font-weight: 600;
+            color: var(--text-main);
+            margin: 40px 0 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 10px;
+        }
+
+        .lang-section-title span {
+            color: var(--accent-orange);
+        }
+
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -149,7 +166,13 @@
         .set-subtitle {
             font-size: 0.95em;
             color: var(--text-muted);
-            margin-bottom: 24px;
+            margin-bottom: 8px;
+        }
+
+        .set-date {
+            font-size: 0.8em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
         }
 
         .progress-bar-bg {
@@ -197,11 +220,16 @@
             </form>
         </div>
 
+        <!-- EXTENSIONS FRANÇAISES -->
+        <h2 class="lang-section-title">🇫🇷 Extensions <span>Françaises (FR)</span></h2>
         <div class="grid">
-            {% for s in sets %}
+            {% for s in sets.fr %}
             <a href="/set/{{ s.code }}" class="card-set">
                 <div class="set-title">{{ s.code }}</div>
                 <div class="set-subtitle">{{ s.name }}</div>
+                {% if s.date and s.date != '1970-01-01' %}
+                    <div class="set-date">🗓 Sortie : {{ s.date }}</div>
+                {% endif %}
                 <div class="progress-bar-bg">
                     <div class="progress-bar-fill" style="width: {{ s.pct }}%;"></div>
                 </div>
@@ -210,8 +238,57 @@
                     <span class="stat-pct">{{ s.pct }}%</span>
                 </div>
             </a>
+            {% else %}
+                <p style="color: var(--text-muted); grid-column: 1 / -1;">Aucune extension française enregistrée.</p>
             {% endfor %}
         </div>
+
+        <!-- EXTENSIONS ANGLAISES -->
+        <h2 class="lang-section-title">🇬🇧 Extensions <span>Anglaises (EN)</span></h2>
+        <div class="grid">
+            {% for s in sets.en %}
+            <a href="/set/{{ s.code }}" class="card-set">
+                <div class="set-title">{{ s.code }}</div>
+                <div class="set-subtitle">{{ s.name }}</div>
+                {% if s.date and s.date != '1970-01-01' %}
+                    <div class="set-date">🗓 Sortie : {{ s.date }}</div>
+                {% endif %}
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: {{ s.pct }}%;"></div>
+                </div>
+                <div class="stat-text">
+                    <span>{{ s.owned }} / {{ s.total }} uniques</span>
+                    <span class="stat-pct">{{ s.pct }}%</span>
+                </div>
+            </a>
+            {% else %}
+                <p style="color: var(--text-muted); grid-column: 1 / -1;">Aucune extension anglaise enregistrée.</p>
+            {% endfor %}
+        </div>
+
+        <!-- EXTENSIONS CORÉENNES -->
+        <h2 class="lang-section-title">🇰🇷 Extensions <span>Coréennes (KR)</span></h2>
+        <div class="grid">
+            {% for s in sets.kr %}
+            <a href="/set/{{ s.code }}" class="card-set">
+                <div class="set-title">{{ s.code }}</div>
+                <div class="set-subtitle">{{ s.name }}</div>
+                {% if s.date and s.date != '1970-01-01' %}
+                    <div class="set-date">🗓 Sortie : {{ s.date }}</div>
+                {% endif %}
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: {{ s.pct }}%;"></div>
+                </div>
+                <div class="stat-text">
+                    <span>{{ s.owned }} / {{ s.total }} uniques</span>
+                    <span class="stat-pct">{{ s.pct }}%</span>
+                </div>
+            </a>
+            {% else %}
+                <p style="color: var(--text-muted); grid-column: 1 / -1;">Aucune extension coréenne enregistrée.</p>
+            {% endfor %}
+        </div>
+
     </div>
 
 </body>
