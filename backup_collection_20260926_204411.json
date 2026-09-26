@@ -1,0 +1,3131 @@
+[
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR001",
+        "card_name": "Cycroid",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR002",
+        "card_name": "Soitsu",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR003",
+        "card_name": "Mad Lobster",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR004",
+        "card_name": "Jerry Beans Man",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR006",
+        "card_name": "Patroid",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR007",
+        "card_name": "Gyroid",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR008",
+        "card_name": "Steamroid",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR009",
+        "card_name": "Drillroid",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR010",
+        "card_name": "UFOroid",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR011",
+        "card_name": "Jetroid",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR012",
+        "card_name": "Wroughtweiler",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR013",
+        "card_name": "Dark Catapulter",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR014",
+        "card_name": "Elemental Hero Bubbleman",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR015",
+        "card_name": "Cyber Dragon",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR017",
+        "card_name": "Cybernetic Cyclopean",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR018",
+        "card_name": "Mechanical Hound",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR019",
+        "card_name": "Cyber Archfiend",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR021",
+        "card_name": "B.E.S. Crystal Core",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR022",
+        "card_name": "Giant Kozaky",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR023",
+        "card_name": "Indomitable Fighter Lei Lei",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR024",
+        "card_name": "Protective Soul Ailin",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR025",
+        "card_name": "Doitsu",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR026",
+        "card_name": "Des Frog",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR027",
+        "card_name": "T.A.D.P.O.L.E.",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR028",
+        "card_name": "Poison Draw Frog",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR029",
+        "card_name": "Tyranno Infinity",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR030",
+        "card_name": "Batteryman C",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR031",
+        "card_name": "Ebon Magician Curran",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR032",
+        "card_name": "D.D.M. - Different Dimension Master",
+        "rarity": "Ultimate Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR033",
+        "card_name": "Steam Gyroid",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR034",
+        "card_name": "UFOroid Fighter",
+        "rarity": "Ultra Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR035",
+        "card_name": "Cyber Twin Dragon",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR037",
+        "card_name": "Power Bond",
+        "rarity": "Ultimate Rare",
+        "quantity": 2
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR038",
+        "card_name": "Fusion Recovery",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR039",
+        "card_name": "Miracle Fusion",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR039",
+        "card_name": "Miracle Fusion",
+        "rarity": "Ultimate Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR040",
+        "card_name": "Dragon's Mirror",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR041",
+        "card_name": "System Down",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR042",
+        "card_name": "Des Croaking",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR043",
+        "card_name": "Pot of Generosity",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR044",
+        "card_name": "Shien's Spy",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR045",
+        "card_name": "Transcendent Wings",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR046",
+        "card_name": "Bubble Shuffle",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR047",
+        "card_name": "Spark Blaster",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR048",
+        "card_name": "Skyscraper",
+        "rarity": "Super Rare",
+        "quantity": 2
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR049",
+        "card_name": "Fire Darts",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR050",
+        "card_name": "Spiritual Earth Art - Kurogane",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR051",
+        "card_name": "Spiritual Water Art - Aoi",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR052",
+        "card_name": "Spiritual Fire Art - Kurenai",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR053",
+        "card_name": "Spiritual Wind Art - Miyabi",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR054",
+        "card_name": "A Rival Appears!",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR055",
+        "card_name": "Magical Explosion",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR056",
+        "card_name": "Rising Energy",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR057",
+        "card_name": "D.D. Trap Hole",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR058",
+        "card_name": "Conscription",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR059",
+        "card_name": "Dimension Wall",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "CRV-KR",
+        "card_code": "CRV-KR060",
+        "card_name": "Prepare to Strike Back",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR001",
+        "card_name": "Zure, Knight of Dark World",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR002",
+        "card_name": "V-Tiger Jet",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR003",
+        "card_name": "Blade Skater",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR004",
+        "card_name": "Queen's Knight",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR005",
+        "card_name": "Jack's Knight",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR006",
+        "card_name": "King's Knight",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR008",
+        "card_name": "Elemental HERO Wildheart",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR009",
+        "card_name": "Reborn Zombie",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR010",
+        "card_name": "Chthonian Soldier",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR011",
+        "card_name": "W-Wing Catapult",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR012",
+        "card_name": "Infernal Incinerator",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR013",
+        "card_name": "Hydrogeddon",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR014",
+        "card_name": "Oxygeddon",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR016",
+        "card_name": "Etoile Cyber",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR017",
+        "card_name": "B.E.S. Tetran",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR018",
+        "card_name": "Nanobreaker",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR019",
+        "card_name": "Rapid-Fire Magician",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR020",
+        "card_name": "Beiige, Vanguard of Dark World",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR021",
+        "card_name": "Broww, Huntsman of Dark World",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR022",
+        "card_name": "Brron, Mad King of Dark World",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR023",
+        "card_name": "Sillva, Warlord of Dark World",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR024",
+        "card_name": "Goldd, Wu-Lord of Dark World",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR025",
+        "card_name": "Scarr, Scout of Dark World",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR026",
+        "card_name": "Familiar-Possessed - Aussa",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR027",
+        "card_name": "Familiar-Possessed - Eria",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR028",
+        "card_name": "Familiar-Possessed - Hiita",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR029",
+        "card_name": "Familiar-Possessed - Wynn",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR030",
+        "card_name": "VW-Tiger Catapult",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR031",
+        "card_name": "VWXYZ-Dragon Catapult Cannon",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR032",
+        "card_name": "Cyber Blader",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR033",
+        "card_name": "Elemental HERO Rampart Blaster",
+        "rarity": "Ultra Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR033",
+        "card_name": "Elemental HERO Rampart Blaster",
+        "rarity": "Ultimate Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR034",
+        "card_name": "Elemental HERO Tempest",
+        "rarity": "Ultimate Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR036",
+        "card_name": "Elemental HERO Shining Flare Wingman",
+        "rarity": "Ultra Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR038",
+        "card_name": "Dark World Lightning",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR039",
+        "card_name": "Level Modulation",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR040",
+        "card_name": "Ojamagic",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR041",
+        "card_name": "Ojamuscle",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR042",
+        "card_name": "Feather Shot",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR043",
+        "card_name": "Bonding - H2O",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR044",
+        "card_name": "Chthonian Alliance",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR045",
+        "card_name": "Armed Changer",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR045",
+        "card_name": "Armed Changer",
+        "rarity": "Ultimate Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR046",
+        "card_name": "Branch!",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR047",
+        "card_name": "Boss Rush",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR048",
+        "card_name": "Gateway to Dark World",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR049",
+        "card_name": "Hero Barrier",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR050",
+        "card_name": "Chthonian Blast",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR051",
+        "card_name": "The Forces of Darkness",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR052",
+        "card_name": "Dark Deal",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR053",
+        "card_name": "Simultaneous Loss",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR054",
+        "card_name": "Weed Out",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR055",
+        "card_name": "The League of Uniform Nomenclature",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR056",
+        "card_name": "Roll Out!",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR057",
+        "card_name": "Chthonian Polymer",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR058",
+        "card_name": "Feather Wind",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR059",
+        "card_name": "Non-Fusion Area",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR060",
+        "card_name": "Level Limit - Area A",
+        "rarity": "Ultimate Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "EEN-KR",
+        "card_code": "EEN-KR060",
+        "card_name": "Level Limit - Area A",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR001",
+        "card_name": "Crystal Beast Ruby Carbuncle",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR002",
+        "card_name": "Crystal Beast Amethyst Cat",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR003",
+        "card_name": "Crystal Beast Emerald Tortoise",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR005",
+        "card_name": "Crystal Beast Amber Mammoth",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR006",
+        "card_name": "Crystal Beast Cobalt Eagle",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR007",
+        "card_name": "Crystal Beast Sapphire Pegasus",
+        "rarity": "Ultimate Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR007",
+        "card_name": "Crystal Beast Sapphire Pegasus",
+        "rarity": "Ultra Rare",
+        "quantity": 2
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR008",
+        "card_name": "Volcanic Doomfire",
+        "rarity": "Ultimate Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR009",
+        "card_name": "Volcanic Shell",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR010",
+        "card_name": "Volcanic Scattershot",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR011",
+        "card_name": "Volcanic Blaster",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR012",
+        "card_name": "Volcanic Slicer",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR013",
+        "card_name": "Volcanic Hammerer",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR015",
+        "card_name": "Gravekeeper's Commandant",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR016",
+        "card_name": "Warrior of Atlantis",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR017",
+        "card_name": "Destroyersaurus",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR018",
+        "card_name": "Zeradias, Herald of Heaven",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR019",
+        "card_name": "Archfiend General",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR020",
+        "card_name": "Harpie Queen",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR021",
+        "card_name": "Sky Scourge Enrise",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR022",
+        "card_name": "Sky Scourge Norleras",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR024",
+        "card_name": "Goe Goe the Gallant Ninja",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR025",
+        "card_name": "Mei-Kou, Master of Barriers",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR026",
+        "card_name": "Raiza the Storm Monarch",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR027",
+        "card_name": "Seismic Crasher",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR028",
+        "card_name": "Dweller in the Depths",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR029",
+        "card_name": "Magna-Slash Dragon",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR030",
+        "card_name": "Gravi-Crush Dragon",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR031",
+        "card_name": "Soul of Fire",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR032",
+        "card_name": "Crystal Beacon",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR034",
+        "card_name": "Crystal Blessing",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR035",
+        "card_name": "Crystal Abundance",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR036",
+        "card_name": "Crystal Promise",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR037",
+        "card_name": "Lucky Iron Axe",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR038",
+        "card_name": "Tornado",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR039",
+        "card_name": "Wild Fire",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR041",
+        "card_name": "Tri-Blaze Accelerator",
+        "rarity": "Ultimate Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR042",
+        "card_name": "Field Barrier",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR043",
+        "card_name": "A Cell Breeding Device",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR044",
+        "card_name": "Otherworld - The A Zone",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR045",
+        "card_name": "Ancient City - Rainbow Ruins",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR046",
+        "card_name": "Triggered Summon",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR047",
+        "card_name": "Last Resort",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR048",
+        "card_name": "Crystal Raigeki",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR049",
+        "card_name": "Volcanic Recharge",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR050",
+        "card_name": "Terrible Deal",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR051",
+        "card_name": "Breakthrough!",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR052",
+        "card_name": "Backs to the Wall",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR053",
+        "card_name": "Introduction to Gallantry",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR054",
+        "card_name": "Secrets of the Gallant",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR055",
+        "card_name": "Radiant Mirror Force",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR056",
+        "card_name": "Hard-sellin' Goblin",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR057",
+        "card_name": "Hard-sellin' Zombie",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR058",
+        "card_name": "Mass Hypnosis",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR059",
+        "card_name": "Gem Flash Energy",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "FOTB-KR",
+        "card_code": "FOTB-KR060",
+        "card_name": "Firewall",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR000",
+        "card_name": "Chaos Emperor Dragon - Envoy of the End",
+        "rarity": "Secret Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR001",
+        "card_name": "Ojama Yellow",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR002",
+        "card_name": "Ojama Black",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR003",
+        "card_name": "Soul Tiger",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR004",
+        "card_name": "Big Koala",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR005",
+        "card_name": "Des Kangaroo",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR006",
+        "card_name": "Crimson Ninja",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR007",
+        "card_name": "Strike Ninja",
+        "rarity": "Ultra Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR008",
+        "card_name": "Gale Lizard",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR009",
+        "card_name": "Spirit of the Pot of Greed",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR010",
+        "card_name": "Chopman the Desperate Outlaw",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR011",
+        "card_name": "Sasuke Samurai #3",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR013",
+        "card_name": "Berserk Gorilla",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR015",
+        "card_name": "Coach Goblin",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR016",
+        "card_name": "Witch Doctor of Chaos",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR017",
+        "card_name": "Chaos Necromancer",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR019",
+        "card_name": "Inferno",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR020",
+        "card_name": "Fenrir",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR021",
+        "card_name": "Gigantes",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR022",
+        "card_name": "Silpheed",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR023",
+        "card_name": "Chaos Sorcerer",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR024",
+        "card_name": "Gren Maju Da Eiza",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR026",
+        "card_name": "Drillago",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR027",
+        "card_name": "Lekunga",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR028",
+        "card_name": "Lord Poison",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR029",
+        "card_name": "Bowganian",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR030",
+        "card_name": "Granadora",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR031",
+        "card_name": "Fuhma Shuriken",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR032",
+        "card_name": "Heart of the Underdog",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR034",
+        "card_name": "Ojama Delta Hurricane!!",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR036",
+        "card_name": "Chaos End",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR037",
+        "card_name": "Yellow Luster Shield",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR038",
+        "card_name": "Chaos Greed",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR039",
+        "card_name": "D.D. Designator",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR040",
+        "card_name": "D.D. Borderline",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR041",
+        "card_name": "Recycle",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR043",
+        "card_name": "Thunder Crash",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR044",
+        "card_name": "Dimension Distortion",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR045",
+        "card_name": "Reload",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR046",
+        "card_name": "Soul Absorption",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR047",
+        "card_name": "Big Burn",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR048",
+        "card_name": "Blasting the Ruins",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR049",
+        "card_name": "Cursed Seal of the Forbidden Spell",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR050",
+        "card_name": "Tower of Babel",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR051",
+        "card_name": "Spatial Collapse",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR052",
+        "card_name": "Chain Disappearance",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR053",
+        "card_name": "Zero Gravity",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR054",
+        "card_name": "Dark Mirror Force",
+        "rarity": "Ultra Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR055",
+        "card_name": "Energy Drain",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR056",
+        "card_name": "Giga Gagagigo",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR057",
+        "card_name": "Mad Dog of Darkness",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR058",
+        "card_name": "Neo Bug",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR059",
+        "card_name": "Sea Serpent Warrior of Darkness",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR060",
+        "card_name": "Terrorking Salmon",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR061",
+        "card_name": "Blazing Inpachi",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR062",
+        "card_name": "Burning Algae",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR063",
+        "card_name": "The Thing in the Crater",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR064",
+        "card_name": "Molten Zombie",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR066",
+        "card_name": "Gora Turtle of Illusion",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR068",
+        "card_name": "Stealth Bird",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR069",
+        "card_name": "Sacred Crane",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR070",
+        "card_name": "Enraged Battle Ox",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR071",
+        "card_name": "Don Turtle",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR072",
+        "card_name": "Balloon Lizard",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR073",
+        "card_name": "Dark Driceratops",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR074",
+        "card_name": "Hyper Hammerhead",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR076",
+        "card_name": "Anti-Aircraft Flower",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR077",
+        "card_name": "Prickle Fairy",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR078",
+        "card_name": "Pinch Hopper",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR079",
+        "card_name": "Skull-Mark Ladybug",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR080",
+        "card_name": "Insect Princess",
+        "rarity": "Ultra Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR081",
+        "card_name": "Amphibious Bugroth MK-3",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR082",
+        "card_name": "Torpedo Fish",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR084",
+        "card_name": "Orca Mega-Fortress of Darkness",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR085",
+        "card_name": "Cannonball Spear Shellfish",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR086",
+        "card_name": "Mataza the Zapper",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR088",
+        "card_name": "Manju of the Ten Thousand Hands",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR089",
+        "card_name": "Getsu Fuhma",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR090",
+        "card_name": "Ryu Kokki",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR091",
+        "card_name": "Gryphon's Feather Duster",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR092",
+        "card_name": "Stray Lambs",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR093",
+        "card_name": "Smashing Ground",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR094",
+        "card_name": "Dimension Fusion",
+        "rarity": "Ultra Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR095",
+        "card_name": "Dedication through Light and Darkness",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR096",
+        "card_name": "Salvage",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR097",
+        "card_name": "Ultra Evolution Pill",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR098",
+        "card_name": "Multiplication of Ants",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR099",
+        "card_name": "Earth Chant",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR100",
+        "card_name": "Jade Insect Whistle",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR101",
+        "card_name": "Destruction Ring",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR102",
+        "card_name": "Fiend's Hand Mirror",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR103",
+        "card_name": "Compulsory Evacuation Device",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR104",
+        "card_name": "A Hero Emerges",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR105",
+        "card_name": "Self-Destruct Button",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR106",
+        "card_name": "Curse of Darkness",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR107",
+        "card_name": "Begone, Knave!",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR108",
+        "card_name": "DNA Transplant",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR109",
+        "card_name": "Robbin' Zombie",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR110",
+        "card_name": "Trap Jammer",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "IOC-KR",
+        "card_code": "IOC-KR111",
+        "card_name": "Invader of Darkness",
+        "rarity": "Secret Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K000",
+        "card_name": "Tri-Horned Dragon",
+        "rarity": "Secret Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K002",
+        "card_name": "Hitotsu-Me Giant",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K004",
+        "card_name": "Skull Servant",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K005",
+        "card_name": "Dark Magician",
+        "rarity": "Ultra Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K006",
+        "card_name": "Gaia The Fierce Knight",
+        "rarity": "Ultra Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K008",
+        "card_name": "Basic Insect",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K009",
+        "card_name": "Mammoth Graveyard",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K010",
+        "card_name": "Silver Fang",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K011",
+        "card_name": "Dark Gray",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K012",
+        "card_name": "Trial of Nightmare",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K013",
+        "card_name": "Nemuriko",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K014",
+        "card_name": "The 13th Grave",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K015",
+        "card_name": "Charubin the Fire Knight",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K016",
+        "card_name": "Flame Manipulator",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K017",
+        "card_name": "Monster Egg",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K018",
+        "card_name": "Firegrass",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K019",
+        "card_name": "Darkfire Dragon",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K020",
+        "card_name": "Dark King of the Abyss",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K021",
+        "card_name": "Fiend Reflection #2",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K022",
+        "card_name": "Fusionist",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K023",
+        "card_name": "Turtle Tiger",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K024",
+        "card_name": "Petit Dragon",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K025",
+        "card_name": "Petit Angel",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K026",
+        "card_name": "Hinotama Soul",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K027",
+        "card_name": "Aqua Madoor",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K028",
+        "card_name": "Kagemusha of the Blue Flame",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K029",
+        "card_name": "Flame Ghost",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K030",
+        "card_name": "Two-Mouth Darkruler",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K031",
+        "card_name": "Dissolverock",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K032",
+        "card_name": "Root Water",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K033",
+        "card_name": "The Furious Sea King",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K034",
+        "card_name": "Green Phantom King",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K035",
+        "card_name": "Ray & Temperature",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K036",
+        "card_name": "King Fog",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K037",
+        "card_name": "Mystical Sheep #2",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K038",
+        "card_name": "Masaki the Legendary Swordsman",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K039",
+        "card_name": "Kurama",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K040",
+        "card_name": "Legendary Sword",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K041",
+        "card_name": "Beast Fangs",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K042",
+        "card_name": "Violet Crystal",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K043",
+        "card_name": "Book of Secret Arts",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K044",
+        "card_name": "Power of Kaishin",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K045",
+        "card_name": "Dragon Capture Jar",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K046",
+        "card_name": "Forest",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K047",
+        "card_name": "Wasteland",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K048",
+        "card_name": "Mountain",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K049",
+        "card_name": "Sogen",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K050",
+        "card_name": "Umi",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K051",
+        "card_name": "Yami",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K052",
+        "card_name": "Dark Hole",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K053",
+        "card_name": "Raigeki",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K054",
+        "card_name": "Red Medicine",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K055",
+        "card_name": "Sparks",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K056",
+        "card_name": "Hinotama",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K057",
+        "card_name": "Fissure",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K058",
+        "card_name": "Trap Hole",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K059",
+        "card_name": "Polymerization",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K060",
+        "card_name": "Remove Trap",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K061",
+        "card_name": "Two-Pronged Attack",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K062",
+        "card_name": "Mystical Elf",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K063",
+        "card_name": "Tyhone",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K064",
+        "card_name": "Beaver Warrior",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K065",
+        "card_name": "Gravedigger Ghoul",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K066",
+        "card_name": "Curse of Dragon",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K067",
+        "card_name": "Karbonala Warrior",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K068",
+        "card_name": "Giant Soldier of Stone",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K069",
+        "card_name": "Uraby",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K071",
+        "card_name": "Reaper of the Cards",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K072",
+        "card_name": "Witty Phantom",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K073",
+        "card_name": "Larvas",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K074",
+        "card_name": "Hard Armor",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K075",
+        "card_name": "Man Eater",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K076",
+        "card_name": "M-Warrior #1",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K077",
+        "card_name": "M-Warrior #2",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K078",
+        "card_name": "Spirit of the Harp",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K079",
+        "card_name": "Armaill",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K080",
+        "card_name": "Terra the Terrible",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K081",
+        "card_name": "Frenzied Panda",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K082",
+        "card_name": "Kumootoko",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K083",
+        "card_name": "Meda Bat",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K084",
+        "card_name": "Enchanting Mermaid",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K085",
+        "card_name": "Fireyarou",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K086",
+        "card_name": "Dragoness the Wicked Knight",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K087",
+        "card_name": "One-Eyed Shield Dragon",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K088",
+        "card_name": "Dark Energy",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K089",
+        "card_name": "Laser Cannon Armor",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K090",
+        "card_name": "Vile Germs",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K091",
+        "card_name": "Silver Bow and Arrow",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K092",
+        "card_name": "Dragon Treasure",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K093",
+        "card_name": "Electro-Whip",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K094",
+        "card_name": "Mystical Moon",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K095",
+        "card_name": "Stop Defense",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K096",
+        "card_name": "Machine Conversion Factory",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K097",
+        "card_name": "Raise Body Heat",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K098",
+        "card_name": "Follow Wind",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K099",
+        "card_name": "Goblin's Secret Remedy",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K100",
+        "card_name": "Final Flame",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K101",
+        "card_name": "Swords of Revealing Light",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K102",
+        "card_name": "Metal Dragon",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K103",
+        "card_name": "Spike Seadra",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K104",
+        "card_name": "Tripwire Beast",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K105",
+        "card_name": "Skull Red Bird",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K106",
+        "card_name": "Armed Ninja",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K107",
+        "card_name": "Flower Wolf",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K109",
+        "card_name": "Sand Stone",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K110",
+        "card_name": "Hane-Hane",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K111",
+        "card_name": "Misairuzame",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K112",
+        "card_name": "Steel Ogre Grotto #1",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K113",
+        "card_name": "Lesser Dragon",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K114",
+        "card_name": "Darkworld Thorns",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K115",
+        "card_name": "Drooling Lizard",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K116",
+        "card_name": "Armored Starfish",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K117",
+        "card_name": "Succubus Knight",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K119",
+        "card_name": "Pot of Greed",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LOB-K",
+        "card_code": "LOB-K121",
+        "card_name": "Left Leg of the Forbidden One",
+        "rarity": "Ultra Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "LODT-EN",
+        "card_code": "LODT-EN002",
+        "card_name": "Cross Porter",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LODT-EN",
+        "card_code": "LODT-EN003",
+        "card_name": "Miracle Flipper",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LODT-EN",
+        "card_code": "LODT-EN004",
+        "card_name": "Destiny Hero - Dread Servant",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "LODT-EN",
+        "card_code": "LODT-EN005",
+        "card_name": "Volcanic Queen",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR001",
+        "card_name": "Elemental HERO Neos",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR002",
+        "card_name": "Sabersaurus",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR003",
+        "card_name": "Neo-Spacian Aqua Dolphin",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR004",
+        "card_name": "Neo-Spacian Flare Scarab",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR005",
+        "card_name": "Neo-Spacian Dark Panther",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR006",
+        "card_name": "Chrysalis Dolphin",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR007",
+        "card_name": "Rallis the Star Bird",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR008",
+        "card_name": "Submarineroid",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR009",
+        "card_name": "Ambulanceroid",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR010",
+        "card_name": "Decoyroid",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR011",
+        "card_name": "Rescueroid",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR012",
+        "card_name": "Destiny HERO - Double Dude",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR013",
+        "card_name": "Destiny HERO - Defender",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR014",
+        "card_name": "Destiny HERO - Dogma",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR015",
+        "card_name": "Destiny HERO - Blade Master",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR016",
+        "card_name": "Destiny HERO - Fear Monger",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR017",
+        "card_name": "Destiny HERO - Dasher",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR018",
+        "card_name": "Black Ptera",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR019",
+        "card_name": "Black Stego",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR020",
+        "card_name": "Ultimate Tyranno",
+        "rarity": "Ultimate Rare",
+        "quantity": 2
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR021",
+        "card_name": "Miracle Jurassic Egg",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR022",
+        "card_name": "Babycerasaurus",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR023",
+        "card_name": "Bitelon",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR024",
+        "card_name": "Alien Grey",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR025",
+        "card_name": "Alien Skull",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR026",
+        "card_name": "Alien Hunter",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR027",
+        "card_name": "Alien Warrior",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR028",
+        "card_name": "Alien Mother",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR029",
+        "card_name": "Cosmic Horror Gangi'el",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR030",
+        "card_name": "Flying Saucer Muusik'i",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR031",
+        "card_name": "Elemental HERO Aqua Neos",
+        "rarity": "Ultra Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR033",
+        "card_name": "Elemental HERO Dark Neos",
+        "rarity": "Ultimate Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR034",
+        "card_name": "Chimeratech Overdragon",
+        "rarity": "Ultimate Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR035",
+        "card_name": "Ambulance Rescueroid",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR036",
+        "card_name": "Super Vehicroid Jumbo Drill",
+        "rarity": "Super Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR037",
+        "card_name": "Contact",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR038",
+        "card_name": "Fake Hero",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR039",
+        "card_name": "Spell Calling",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR040",
+        "card_name": "Vehicroid Connection Zone",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR041",
+        "card_name": "D - Spirit",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR042",
+        "card_name": "Overload Fusion",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR043",
+        "card_name": "Cyclone Blade",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR044",
+        "card_name": "Future Fusion",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR045",
+        "card_name": "Common Soul",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR046",
+        "card_name": "Neo Space",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR049",
+        "card_name": "Destiny Mirage",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR051",
+        "card_name": "Crop Circles",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR052",
+        "card_name": "The Paths of Destiny",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR053",
+        "card_name": "Orbital Bombardment",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR054",
+        "card_name": "Royal Writ of Taxation",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR055",
+        "card_name": "Wonder Garage",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR056",
+        "card_name": "Supercharge",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR057",
+        "card_name": "Cyber Summon Blaster",
+        "rarity": "Rare",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR058",
+        "card_name": "Fossil Excavation",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR059",
+        "card_name": "Synthetic Seraphim",
+        "rarity": "Common",
+        "quantity": 1
+    },
+    {
+        "set_code": "POTD-KR",
+        "card_code": "POTD-KR060",
+        "card_name": "Brainwashing Beam",
+        "rarity": "Common",
+        "quantity": 1
+    }
+]
