@@ -16,6 +16,7 @@
             --text-main: #f5ebe6;
             --text-muted: #b8a399;
             --panel-bg: rgba(18, 10, 9, 0.75);
+            --accent-green: #2ecc71;
         }
 
         body {
@@ -24,24 +25,40 @@
             background-size: cover;
             color: var(--text-main);
             font-family: 'Plus Jakarta Sans', sans-serif;
-            padding: 30px 20px;
+            padding: 80px 20px 30px 20px;
             margin: 0;
             min-height: 100vh;
             -webkit-font-smoothing: antialiased;
         }
 
-        .btn-back {
-            color: var(--text-muted);
+        /* BOUTON DE RETOUR FLOTTANT */
+        .btn-back-floating {
+            position: fixed;
+            top: 15px;
+            left: 20px;
+            z-index: 1000;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(12px);
+            color: var(--text-main);
             text-decoration: none;
             font-weight: 600;
-            font-size: 0.9em;
-            margin-bottom: 20px;
-            display: inline-block;
-            transition: color 0.2s;
+            font-size: 0.88em;
+            padding: 10px 18px;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
         }
 
-        .btn-back:hover {
-            color: var(--accent-orange);
+        .btn-back-floating:hover {
+            background: var(--accent-orange);
+            color: #ffffff;
+            border-color: var(--accent-orange);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(241, 90, 36, 0.4);
         }
 
         .header-bar {
@@ -55,54 +72,67 @@
             border-radius: 20px;
             margin-bottom: 30px;
             position: sticky;
-            top: 15px;
+            top: 70px;
             z-index: 100;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
-        .header-bar h2 {
+        .header-left {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: flex-start;
+        }
+
+        .header-left h2 {
             margin: 0;
             font-family: 'Playfair Display', serif;
             font-size: 1.5em;
             color: var(--text-main);
         }
 
-        .header-bar h2 span {
+        .header-left h2 span {
             color: var(--accent-orange);
             font-style: italic;
         }
 
-        .btn-rarity-guide {
-            background: rgba(241, 90, 36, 0.15);
-            color: var(--accent-orange);
-            border: 1px solid var(--accent-orange);
-            padding: 6px 14px;
-            border-radius: 50px;
-            font-size: 0.8em;
-            font-weight: 600;
-            cursor: pointer;
-            margin-top: 8px;
-            transition: all 0.2s;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
+        .set-val-header {
+            display: inline-block;
+            font-size: 0.85em;
+            color: var(--accent-green);
+            background: rgba(46, 204, 113, 0.12);
+            padding: 3px 10px;
+            border-radius: 8px;
+            border: 1px solid rgba(46, 204, 113, 0.25);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-style: normal;
         }
 
-        .btn-rarity-guide:hover {
-            background: var(--accent-orange);
-            color: #ffffff;
-            transform: translateY(-1px);
+        .header-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+        }
+
+        .top-row {
+            width: 200px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .pct-text {
+            font-weight: 700;
+            color: var(--accent-orange);
+            font-size: 0.9em;
         }
 
         .progress-container {
-            width: 180px;
+            width: 200px;
             background-color: rgba(255, 255, 255, 0.08);
             border-radius: 10px;
             height: 8px;
             overflow: hidden;
-            display: inline-block;
-            vertical-align: middle;
-            margin: 0 12px;
         }
 
         .progress-bar {
@@ -111,6 +141,17 @@
             background-color: var(--accent-orange);
             border-radius: 10px;
             transition: width 0.3s ease;
+        }
+
+        .bottom-row {
+            width: 200px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .counter-text {
+            font-size: 0.85em;
+            color: var(--text-main);
         }
 
         .grid {
@@ -202,14 +243,25 @@
             padding: 4px 6px;
         }
 
+        .rarity-left {
+            display: flex;
+            flex-direction: column;
+            max-width: 110px;
+        }
+
         .rarity-badge {
             font-size: 0.75em;
             color: var(--text-muted);
             font-weight: 500;
-            max-width: 105px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+        }
+
+        .rarity-price {
+            font-size: 0.7em;
+            color: var(--accent-green);
+            font-weight: 700;
         }
 
         .qty-counter {
@@ -245,137 +297,28 @@
             min-width: 14px;
             text-align: center;
         }
-
-        /* --- STYLES MODALE GUIDE DES RARETÉS --- */
-        .modal-overlay {
-            display: none;
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .modal-content {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 20px;
-            width: 90%;
-            max-width: 750px;
-            max-height: 85vh;
-            padding: 25px;
-            box-shadow: 0 15px 50px rgba(0,0,0,0.7);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            padding-bottom: 15px;
-        }
-
-        .modal-header h3 {
-            margin: 0;
-            font-family: 'Playfair Display', serif;
-            font-size: 1.6em;
-            color: var(--text-main);
-        }
-
-        .modal-header h3 span {
-            color: var(--accent-orange);
-            font-style: italic;
-        }
-
-        .modal-close {
-            background: none;
-            border: none;
-            color: var(--text-muted);
-            font-size: 1.8em;
-            cursor: pointer;
-            line-height: 1;
-        }
-
-        .modal-close:hover { color: var(--accent-orange); }
-
-        .modal-body {
-            overflow-y: auto;
-            padding-right: 8px;
-        }
-
-        .modal-body::-webkit-scrollbar {
-            width: 6px;
-        }
-        .modal-body::-webkit-scrollbar-thumb {
-            background: var(--accent-orange);
-            border-radius: 10px;
-        }
-
-        .rarity-guide-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .rarity-card-item {
-            background: var(--panel-bg);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 14px;
-            padding: 14px;
-            display: flex;
-            gap: 16px;
-            align-items: center;
-        }
-
-        .rarity-img-thumb {
-            width: 85px;
-            height: 124px;
-            object-fit: cover;
-            border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            flex-shrink: 0;
-        }
-
-        .rarity-info {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-        }
-
-        .rarity-title-tag {
-            font-weight: 700;
-            font-size: 1em;
-            color: var(--accent-orange);
-        }
-
-        .rarity-desc {
-            font-size: 0.85em;
-            color: var(--text-muted);
-            line-height: 1.4;
-            margin: 0;
-        }
     </style>
 </head>
 <body>
 
-<a href="/" class="btn-back">← Retour aux extensions</a>
+<!-- BOUTON RETOUR FLOTTANT -->
+<a href="/" class="btn-back-floating">← Retour aux extensions</a>
 
 <div class="header-bar">
-    <div>
+    <div class="header-left">
         <h2>{{ set_code }} — <span>{{ set_name }}</span></h2>
-        <button type="button" class="btn-rarity-guide" onclick="openRarityModal()">✨ Guide des raretés</button>
+        <span class="set-val-header">Valeur : ${{ "%.2f"|format(set_value) }}</span>
     </div>
-    <div>
-        <span id="counter" style="font-size: 0.9em; color: var(--text-muted);">Possédées : <strong style="color:var(--text-main);">{{ owned }} / {{ total }}</strong></span>
+    <div class="header-right">
+        <div class="top-row">
+            <span id="percentage" class="pct-text">{{ pct }}%</span>
+        </div>
         <div class="progress-container">
             <div class="progress-bar" id="progressBar"></div>
         </div>
-        <span id="percentage" style="font-weight:700; color: var(--accent-orange);">{{ pct }}%</span>
+        <div class="bottom-row">
+            <div id="counter" class="counter-text"><strong>{{ owned }} / {{ total }}</strong></div>
+        </div>
     </div>
 </div>
 
@@ -395,7 +338,12 @@
         <div class="rarity-panel">
             {% for r in card.rarities %}
             <div class="rarity-row">
-                <span class="rarity-badge" title="{{ r.rarity }}">{{ r.rarity }}</span>
+                <div class="rarity-left">
+                    <span class="rarity-badge" title="{{ r.rarity }}">{{ r.rarity }}</span>
+                    {% if r.price > 0 %}
+                        <span class="rarity-price">${{ "%.2f"|format(r.price) }}</span>
+                    {% endif %}
+                </div>
                 <div class="qty-counter">
                     <button type="button" class="btn-qty" onclick="updateQty({{ r.id }}, -1, {{ card.id }})">-</button>
                     <span class="qty-val" id="qty-{{ r.id }}">{{ r.qty }}</span>
@@ -408,71 +356,8 @@
     {% endfor %}
 </div>
 
-<!-- FENÊTRE MODALE DU GUIDE DES RARETÉS -->
-<div id="rarityModal" class="modal-overlay" onclick="closeRarityModal(event)">
-    <div class="modal-content" onclick="event.stopPropagation()">
-        <div class="modal-header">
-            <h3>Guide Visuel des <span>Raretés</span></h3>
-            <button class="modal-close" onclick="closeRarityModal(event)">&times;</button>
-        </div>
-        <div class="modal-body">
-            <div class="rarity-guide-grid">
-
-                <div class="rarity-card-item">
-                    <img class="rarity-img-thumb" src="https://images.ygoprodeck.com/images/cards/83764718.jpg" alt="Prismatic Secret Rare">
-                    <div class="rarity-info">
-                        <span class="rarity-title-tag">Prismatic Secret Rare</span>
-                        <p class="rarity-desc">Nom argenté brillant et gaufré. L'artwork et la surface de la carte arborent un quadrillage prismatique étincelant en réseau vertical/horizontal arc-en-ciel.</p>
-                    </div>
-                </div>
-
-                <div class="rarity-card-item">
-                    <img class="rarity-img-thumb" src="https://images.ygoprodeck.com/images/cards/46986414.jpg" alt="Secret Rare">
-                    <div class="rarity-info">
-                        <span class="rarity-title-tag">Secret Rare</span>
-                        <p class="rarity-desc">Nom réfléchissant argenté avec une illustration traversée de rayures diagonales métallisées argentées et arc-en-ciel.</p>
-                    </div>
-                </div>
-
-                <div class="rarity-card-item">
-                    <img class="rarity-img-thumb" src="https://images.ygoprodeck.com/images/cards/36953371.jpg" alt="Normal Parallel Rare">
-                    <div class="rarity-info">
-                        <span class="rarity-title-tag">Normal Parallel / Super Parallel</span>
-                        <p class="rarity-desc">La carte conserve son look Normal/Commune mais est entièrement recouverte d'un film plastique protecteur holographique aux reflets zébrés ou quadrillés.</p>
-                    </div>
-                </div>
-
-                <div class="rarity-card-item">
-                    <img class="rarity-img-thumb" src="https://images.ygoprodeck.com/images/cards/44095762.jpg" alt="Ultra Rare">
-                    <div class="rarity-info">
-                        <span class="rarity-title-tag">Ultra Rare</span>
-                        <p class="rarity-desc">Nom imprimé en lettres d'or gravées brillant à la lumière. L'image est métallisée et holographique.</p>
-                    </div>
-                </div>
-
-                <div class="rarity-card-item">
-                    <img class="rarity-img-thumb" src="https://images.ygoprodeck.com/images/cards/23995346.jpg" alt="Super Rare">
-                    <div class="rarity-info">
-                        <span class="rarity-title-tag">Super Rare</span>
-                        <p class="rarity-desc">Le nom de la carte reste noir/blanc standard. Seule l'illustration au centre est imprimée sur une couche brillante métallisée holographique.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
 <script>
     const totalUniqueCodes = {{ total }};
-
-    function openRarityModal() {
-        document.getElementById('rarityModal').style.display = 'flex';
-    }
-
-    function closeRarityModal(event) {
-        document.getElementById('rarityModal').style.display = 'none';
-    }
 
     function updateQty(rarityId, delta, cardId) {
         const qtyEl = document.getElementById(`qty-${rarityId}`);
@@ -519,7 +404,7 @@
         const ownedUniqueCount = ownedCodes.size;
         const pct = ((ownedUniqueCount / totalUniqueCodes) * 100).toFixed(2);
 
-        document.getElementById('counter').innerHTML = `Possédées : <strong style="color:var(--text-main);">${ownedUniqueCount} / ${totalUniqueCodes}</strong>`;
+        document.getElementById('counter').innerHTML = `<strong>${ownedUniqueCount} / ${totalUniqueCodes}</strong>`;
         document.getElementById('percentage').innerText = `${pct}%`;
         document.getElementById('progressBar').style.width = `${pct}%`;
     }
