@@ -177,5 +177,5 @@ def update_prices_in_db(set_code):
     print(f"\nTerminé ! {updated_count} lignes de raretés mises à jour.")
 
 if __name__ == '__main__':
-    target_set = "DP29-KR"
+    target_set = "LOB-K"
     update_prices_in_db(target_set)
