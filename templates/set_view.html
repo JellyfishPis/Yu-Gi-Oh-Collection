@@ -244,19 +244,22 @@
         }
 
         .rarity-left {
-            display: flex;
-            flex-direction: column;
-            max-width: 110px;
-        }
+    		display: flex;
+    		flex-direction: column;
+    		flex: 1; /* Prend l'espace disponible sans pousser le reste */
+   		min-width: 0; /* Indispensable pour que text-overflow fonctionne sous flexbox */
+   		margin-right: 8px; /* Laisse un espace propre avant le bouton "-" */
+	}
 
         .rarity-badge {
-            font-size: 0.75em;
-            color: var(--text-muted);
-            font-weight: 500;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+    	font-size: 0.75em;
+    	color: var(--text-muted);
+    	font-weight: 500;
+    	white-space: nowrap;
+    	overflow: hidden;
+    	text-overflow: ellipsis;
+    	display: block;
+	}
 
         .rarity-price {
             font-size: 0.7em;
@@ -265,10 +268,11 @@
         }
 
         .qty-counter {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
+    		display: flex;
+    		align-items: center;
+    		gap: 6px;
+    		flex-shrink: 0; /* Interdit au bloc du compteur de rétrécir */
+	}	
 
         .btn-qty {
             background: rgba(255, 255, 255, 0.08);
